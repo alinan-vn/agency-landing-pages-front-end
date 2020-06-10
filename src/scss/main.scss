@@ -1,9 +1,7 @@
-$primary-color: #d84c4c;
+@import './variables';
+@import './nav';
 
-a {
-    color: $primary-color;
+body {
+    background-color: $primary-color;
 }
 
-p {
-    color: $primary-color;
-}
