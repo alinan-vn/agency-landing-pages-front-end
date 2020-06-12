@@ -1,8 +1,18 @@
 @import './variables';
 @import './nav';
 @import './footer';
+@import './landing-page';
 
 body {
     background-color: $primary-color;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: $fourth-color;
 }
 

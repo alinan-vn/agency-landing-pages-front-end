@@ -16,11 +16,14 @@ footer li {
 }
 
 footer a {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
     text-decoration: none;
     color: $secondary-color;
 }
 
-footer > :nth-child(4) {
+footer > :nth-child(2) {
     position: fixed;
     bottom: 1rem;
     right: 1rem;

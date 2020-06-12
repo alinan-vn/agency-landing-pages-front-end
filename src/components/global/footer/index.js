@@ -10,13 +10,15 @@ class Footer extends React.Component {
                 <footer className='footer__ul'>
                     <a href='!#' className=''>
                         <FontAwesomeIcon className='fa__social-media' icon={faFacebook} />
+                        <FontAwesomeIcon className='fa__social-media' icon={faTwitter} />
+                        <FontAwesomeIcon className='fa__social-media' icon={faInstagram} />
                     </a>
-                    <a href='!#' className=''>
+                    {/* <a href='!#' className=''>
                         <FontAwesomeIcon className='fa__social-media' icon={faTwitter} />
                     </a>
                     <a href='!#' className=''>
                         <FontAwesomeIcon className='fa__social-media' icon={faInstagram} />
-                    </a>
+                    </a> */}
                     <li className=''>
                         &copy; Copyright 2020
                     </li>

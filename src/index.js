@@ -7,11 +7,11 @@ import Footer from './components/global/footer/index'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div>
+  <body>
     <Nav />
     <App />
     <Footer />
-  </div>,
+  </body>,
   document.getElementById('root')
 );
 
