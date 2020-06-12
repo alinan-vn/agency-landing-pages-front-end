@@ -1,0 +1,28 @@
+.fa {
+    &__social-media {
+        font-size: 2.5rem;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: $secondary-color;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+footer > :nth-child(4) {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+

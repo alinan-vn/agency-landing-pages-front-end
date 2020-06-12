@@ -1,6 +1,6 @@
 import React from 'react';
 import './scss/main.scss';
-import Nav from './components/global/nav/index';
+
 import Landing from './components/landing_page/index';
 import About from './components/about/index';
 import Projects from './components/projects/index';
