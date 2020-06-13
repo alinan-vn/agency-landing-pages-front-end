@@ -6,3 +6,15 @@ $fourth-color: #114b5f;
 $nav-font: 'Roboto', sans-serif;
 
 $landing-bg: '../img/bg-1.jpg';
+
+@mixin slow-transition {
+    transition: all 1s ease-in-out;
+}
+
+@mixin medium-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin fast-transition {
+    transition: all 0.15s ease-in-out;
+}

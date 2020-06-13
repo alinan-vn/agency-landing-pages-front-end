@@ -1,8 +1,8 @@
-// header {
-//     width: 100vw;
-//     background-color: $secondary-color;
-//     opacity: 0.9;
-// }
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
 
 .nav {
     &-li {
@@ -14,10 +14,16 @@
 
     &-li > a {
         text-decoration: none;
-        color: $third-color;
+        color: $secondary-color;
         font-family: $nav-font;
         font-weight: bold;
         margin-top: 2rem;
+        @include medium-transition;
+
+        &:hover {
+            color: $primary-color;
+            cursor: pointer;
+        }
     }
 
     &-ul {
@@ -27,6 +33,7 @@
     }
 
     &-ul > :nth-child(1) {
-        margin-right: auto;
+        position: fixed;
+        left: 0;
     }
 }

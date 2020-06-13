@@ -1,32 +1,26 @@
 .landing {
-    height: 100%;
-    padding-top: 100vh;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
+    height: 100vh;
+    width: 100%;
     background: 
-        // linear-gradient(
-        //     to right,
-        //     rgba($primary-color, 0.8),
-        //     rgba($primary-color, 0.2)
-        // ),
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.2),
+            rgba($primary-color, 0)
+        ),
         url($landing-bg) center top;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
 
-
-    // align-items: center;
-    // text-align: center;
-    // background: url($landing-bg) center top;
-    // background-size: cover;
+    &__text {
+        font-size: 3rem;
+        margin-bottom: 50vh;
+        width: 40vw;
+        color: $primary-color;
+        
+    }
+    
 }
-
-
-
-// background: 
-//         linear-gradient(
-//             to right,
-//             rgba($primary-color, 0.8),
-//             rgba($primary-color, 0.2)
-//         ),
-//         url($background-picture) center top;
-//     background-size: cover;
