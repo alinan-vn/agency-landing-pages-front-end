@@ -1,4 +1,4 @@
-.landing {
+.projects {
     height: 100vh;
     width: 100%;
     background: 
@@ -7,7 +7,7 @@
             rgba($primary-color, 0.2),
             rgba($primary-color, 0)
         ),
-        url($landing-bg) center top;
+        url($projects-bg) center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -21,5 +21,15 @@
         width: 40vw;
         color: $primary-color;
         
+    }
+    
+}
+
+.nav-projects {
+    color: $fourth-color;
+
+    &:hover {
+        color: $third-color;
+        cursor: pointer;
     }
 }
