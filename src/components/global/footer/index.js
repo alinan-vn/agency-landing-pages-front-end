@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-
 class Footer extends React.Component {
+
+    goToSocial = (url) => {
+        window.open(url)
+    }
 
     render(){
         return(    
                 <footer className='footer__ul'>
-                    <a href='!#' className=''>
-                        <FontAwesomeIcon className='fa__social-media' icon={faFacebook} />
-                    </a>
-                    <a href='!#' className=''>
-                        <FontAwesomeIcon className='fa__social-media' icon={faTwitter} />
-                    </a>
-                    <a href='!#' className=''>
-                        <FontAwesomeIcon className='fa__social-media' icon={faInstagram} />
-                    </a>
+                    <div>
+                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faFacebook} />
+                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faTwitter} />
+                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faInstagram} />
+                    </div>
                     <li className=''>
                         &copy; Copyright 2020
                     </li>

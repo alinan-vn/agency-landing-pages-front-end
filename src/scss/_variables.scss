@@ -4,3 +4,20 @@ $third-color: #1a936f;
 $fourth-color: #114b5f;
 
 $nav-font: 'Roboto', sans-serif;
+
+$landing-bg: '../img/background/bg-1.jpg';
+$projects-bg: '../img/background/bg-2.jpg';
+
+$project-img-1: '../img/project_images/example.jpg';
+
+@mixin slow-transition {
+    transition: all 1s ease-in-out;
+}
+
+@mixin medium-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin fast-transition {
+    transition: all 0.15s ease-in-out;
+}
