@@ -5,8 +5,10 @@ $fourth-color: #114b5f;
 
 $nav-font: 'Roboto', sans-serif;
 
-$landing-bg: '../img/bg-1.jpg';
-$projects-bg: '../img/bg-2.jpg';
+$landing-bg: '../img/background/bg-1.jpg';
+$projects-bg: '../img/background/bg-2.jpg';
+
+$project-img-1: '../img/project_images/example.jpg';
 
 @mixin slow-transition {
     transition: all 1s ease-in-out;
