@@ -1,44 +1,67 @@
 .about {
+    
+    height: 90vh;
+    width: 100%;
     background: 
         linear-gradient(
             to right,
-            rgba($primary-color, 0.4),
-            rgba($primary-color, 0.2)
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.4)
         ),
         url($about-bg) center;
-    height: 80vh;
-    width: 100%;
     background-size: cover;
+    background-attachment: scroll;
+    // fixed --> keeps the background image fixed in one position while the rest of the rest of the page scrolls
+    // scroll --> the background image moves with the scroll
+    // local --> ?? seems to behave like scroll
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
     
-
-.header-text {
-    font-size: 3.5vw;
-    margin-bottom: 20vh;
-    width: 60vw;
-    color: $fourth-color
-}
-
-.p-text {
-    font-size: 2vw;
-    margin-bottom: 30vh;
-    color: $fourth-color
-    
-}
-
-.about-box {
-    background-color: white;
-    margin: 10px;
-    padding: 30px 40px 30px 40px;
+.trans-box {
+    padding: 10% 35%;
     border-radius: 10px;
-    opacity: 50%;
+    background-color: white;
+    background: rgba(0,0,100,0.2);
+    position: relative;
+    top: -100px
 }
-// look up opacity and Transparent Box on w3schools
 
-.about h2 {
-    font-weight: bold;
+.trans-box h2 {
+    font-size: 48px;
+    white-space: nowrap;
 }
+
+.content-left {
+    margin: 10vh;
+    padding: 10vh ;
+    text-align: left;
+
+    h3 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
+
+.content-right {
+    margin: 10px;
+    padding: 10px 180px ;
+    text-align: right;
+
+    h3 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
+
+
+
+
