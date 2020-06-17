@@ -5,9 +5,7 @@ class Projects extends React.Component {
         super()
         this.state = {
             projectImages: [
-                '../../img/project_images/example.jpg',
-                '../place one', 
-                '../asdfasdf'
+                '../../img/project_images/example.jpg'
             ]
         }
     }
