@@ -1,0 +1,44 @@
+.about {
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.4),
+            rgba($primary-color, 0.2)
+        ),
+        url($about-bg) center;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.header-text {
+    font-size: 3.5vw;
+    margin-bottom: 20vh;
+    width: 60vw;
+    color: $fourth-color
+}
+
+.p-text {
+    font-size: 2vw;
+    margin-bottom: 30vh;
+    color: $fourth-color
+    
+}
+
+.about-box {
+    background-color: white;
+    margin: 10px;
+    padding: 30px 40px 30px 40px;
+    border-radius: 10px;
+    opacity: 50%;
+}
+// look up opacity and Transparent Box on w3schools
+
+.about h2 {
+    font-weight: bold;
+}
