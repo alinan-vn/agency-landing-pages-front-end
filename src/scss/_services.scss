@@ -1,0 +1,34 @@
+.services {
+    &__landing-image {
+        height: 85vh;
+        width: 100%;
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.4),
+                rgba($primary-color, 0.1)
+            ),
+            url($projects-bg) center top;
+        background-size: cover;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            size: 3rem;
+            width: 60vw;
+            color: $fourth-color;
+            margin-top: -8rem;
+        }
+    }
+
+    &__items {
+        grid-template-columns: 2;
+    }
+
+    // &__item {
+
+    // }
+}

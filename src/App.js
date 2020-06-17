@@ -3,6 +3,7 @@ import './scss/main.scss';
 
 import Landing from './components/landing_page/index';
 import About from './components/about/index';
+import Services from './components/services/index';
 import Projects from './components/projects/index';
 import Staff from './components/staff/index';
 import Contact from './components/contact_us/index';
@@ -18,9 +19,11 @@ class App extends React.Component {
       <Router>
         <Route exact path ='/' component={Landing} />
         <Route exact path ='/about' component={About} />
-        <Route exact path ='/projects' component={Projects} />
-        <Route exact path ='/staff' component={Staff} />
+        <Route exact path ='/services' component={Services} />
+        {/* <Route exact path ='/projects' component={Projects} />
+        <Route exact path ='/staff' component={Staff} /> */}
         <Route exact path ='/contact-us' component={Contact} />
+        
       </Router>
     )
   }

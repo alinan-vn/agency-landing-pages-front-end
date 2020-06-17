@@ -45,6 +45,11 @@ export default class Nav extends Component {
                     </a>
                 </li>
                 <li className='nav-li'>
+                    <a className={this.state.navClass} href="/services">
+                        Services
+                    </a>
+                </li>
+                {/* <li className='nav-li'>
                     <a className={this.state.navClass} href="/projects">
                         Projects
                     </a>
@@ -53,7 +58,7 @@ export default class Nav extends Component {
                     <a className={this.state.navClass} href="/staff">
                         Staff
                     </a>
-                </li>
+                </li> */}
                 <li className='nav-li'>
                     <a className={this.state.navClass} href="/contact-us">
                         Contact Us
