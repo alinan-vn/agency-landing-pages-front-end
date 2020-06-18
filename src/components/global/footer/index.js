@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 class Footer extends React.Component {
 
@@ -12,9 +12,8 @@ class Footer extends React.Component {
         return(    
                 <footer className='footer__ul'>
                     <div>
-                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faFacebook} />
-                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faTwitter} />
-                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faInstagram} />
+                        {/* <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faFacebook} />
+                        <FontAwesomeIcon onClick={() => this.goToSocial('https://www.youtube.com/watch?v=dQw4w9WgXcQ')} className='social-icons' icon={faLinkedin} /> */}
                     </div>
                     <li className=''>
                         &copy; Copyright 2020
