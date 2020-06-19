@@ -1,5 +1,5 @@
-.landing {
-    height: 100vh;
+.team {
+    height: 80vh;
     width: 100%;
     background: 
         linear-gradient(
@@ -7,7 +7,7 @@
             rgba($primary-color, 0.2),
             rgba($primary-color, 0)
         ),
-        url($landing-bg) center top;
+        url($team-bg) center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -27,5 +27,19 @@
         margin-bottom: 30vh;
         width: 60vw;
         color: $primary-color;
+    }
+}
+
+.projects img {
+    // height: 20vh;
+    width: 20%;
+}
+
+.nav-team {
+    color: $third-color;
+
+    &:hover {
+        color: $fourth-color;
+        cursor: pointer;
     }
 }
