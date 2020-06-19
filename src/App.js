@@ -5,7 +5,7 @@ import Landing from './components/landing_page/index';
 import About from './components/about/index';
 import Services from './components/services/index';
 import Projects from './components/projects/index';
-import Staff from './components/staff/index';
+import Staff from './components/team/index';
 import Contact from './components/contact_us/index';
 
 import {
