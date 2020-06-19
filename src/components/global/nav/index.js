@@ -36,7 +36,7 @@ export default class Nav extends Component {
             <ul className='nav-ul'>
                 <li className='nav-li'>
                     <a className={this.state.navClass} href="/">
-                        City of Wind Design
+                        Agency X
                     </a>
                 </li>
                 <li className='nav-li'>
@@ -44,21 +44,21 @@ export default class Nav extends Component {
                         About
                     </a>
                 </li>
-                {/* <li className='nav-li'>
+                <li className='nav-li'>
                     <a className={this.state.navClass} href="/services">
                         Services
                     </a>
-                </li> */}
+                </li>
                 {/* <li className='nav-li'>
                     <a className={this.state.navClass} href="/projects">
                         Projects
                     </a>
-                </li> */}
-                <li className='nav-li'>
-                    <a className={this.state.navClass} href="/team">
-                        Team
-                    </a>
                 </li>
+                <li className='nav-li'>
+                    <a className={this.state.navClass} href="/staff">
+                        Staff
+                    </a>
+                </li> */}
                 <li className='nav-li'>
                     <a className={this.state.navClass} href="/contact-us">
                         Contact Us
