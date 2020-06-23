@@ -9,11 +9,15 @@
         ),
         url($team-bg) center top;
     background-size: cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     text-align: center;
+    display: flex;
+
+    &__header {
+        margin-top: 5rem;
+    }
 
     &__text {
         font-size: 2.6rem;
@@ -42,4 +46,31 @@
         color: $fourth-color;
         cursor: pointer;
     }
+}
+
+.columns {
+    display: grid;
+    grid-template: 'column1 column2';
+    grid-gap: 4rem;
+    margin-bottom: -15rem;
+
+
+    &__one {
+        grid-area: column1;
+        margin-left: 20rem;
+        width: 30vw;
+        color: green;
+    }
+
+    &__two {
+        grid-area: column2;
+        margin-right: 20rem;
+        width: 30vw;
+        color: red;
+    }
+}
+
+.tool-img {
+    height: 40vh;
+    width: 60%;
 }

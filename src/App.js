@@ -5,7 +5,7 @@ import Landing from './components/landing_page/index';
 import About from './components/about/index';
 import Services from './components/services/index';
 import Projects from './components/projects/index';
-import Staff from './components/team/index';
+import Team from './components/team/index';
 import Contact from './components/contact_us/index';
 
 import {
@@ -19,9 +19,9 @@ class App extends React.Component {
       <Router>
         <Route exact path ='/' component={Landing} />
         <Route exact path ='/about' component={About} />
-        <Route exact path ='/services' component={Services} />
-        {/* <Route exact path ='/projects' component={Projects} />
-        <Route exact path ='/staff' component={Staff} /> */}
+        {/* <Route exact path ='/services' component={Services} /> */}
+        {/* <Route exact path ='/projects' component={Projects} /> */}
+        <Route exact path ='/team' component={Team} />
         <Route exact path ='/contact-us' component={Contact} />
         
       </Router>
