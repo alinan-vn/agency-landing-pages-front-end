@@ -8,8 +8,11 @@
 @import './team';
 
 body {
-    background-color: $primary-color;
-    // overflow: auto;
+    // background-color: $primary-color;
+    background: linear-gradient(
+        to right,
+        $primary-color, $secondary-color
+    );
 }
 
 body::-webkit-scrollbar {

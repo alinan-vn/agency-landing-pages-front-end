@@ -30,7 +30,12 @@ class Team extends React.Component {
     render(){
         return(
             <section className='team'>
-                <h1 className='team__header'>About the Staff</h1>
+                <div className='team__bg-img'>
+                    <h1>About the Staff</h1>
+                    <p>
+                        Here are Windy City Design industries we offer the finest of servies. From the most exquisite design of a gentle flower, to the most hardcore, rigidness, of a killer sting bee.
+                    </p>
+                </div>
                 <div className='columns'>
                     <div className='columns__one'>
                         <div className='set'>
