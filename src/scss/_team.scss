@@ -1,38 +1,35 @@
 .team {
-    height: 80vh;
-    width: 100%;
-    background: 
-        linear-gradient(
-            to right,
-            rgba($primary-color, 0.2),
-            rgba($primary-color, 0)
-        ),
-        url($team-bg) center top;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
 
-    &__text {
-        font-size: 2.6rem;
-        margin-bottom: 15vh;
-        width: 65vw;
-        color: $primary-color;
+    &__bg-img {
+        height: 80vh;
+        width: 100%;
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.2),
+                rgba($primary-color, 0)
+            ),
+            url($team-bg) center top;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        display: flex;
+
+        & h1 {
+            padding-bottom: 0vh;
+            font-size: 3rem;
+            color: $secondary-color;
+        }
+
+        & p {
+            color: $secondary-color;
+            font-size: 1.3rem;
+            text-align: justify;
+            width: 50vw;
+        }
     }
-
-    &__para {
-        font-size: 1rem;
-        margin-bottom: 30vh;
-        width: 60vw;
-        color: $primary-color;
-    }
-}
-
-.projects img {
-    // height: 20vh;
-    width: 20%;
 }
 
 .nav-team {
@@ -42,4 +39,39 @@
         color: $fourth-color;
         cursor: pointer;
     }
+}
+
+.columns {
+    display: grid;
+    grid-template: 'column1 column2';
+    grid-gap: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    // align-items: center;
+    // justify-items: center;
+
+    &__one {
+        grid-area: column1;
+        margin-left: 20rem;
+        width: 30vw;
+        color: green;
+    }
+
+    &__two {
+        grid-area: column2;
+        margin-right: 20rem;
+        width: 30vw;
+        color: red;
+    }
+
+    & .set {
+        border-bottom: 0.5rem dotted $secondary-color;
+        width: 25vw;
+    }
+}
+
+.tool-img {
+    height: 50vh;
+    width: 100%;
+    border-radius: 25px;
 }
