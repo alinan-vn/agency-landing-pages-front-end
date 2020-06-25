@@ -1,29 +1,100 @@
 import React from 'react';
-// import ToolImg from '../../img/team/tools/example-tools.jpg';
-// import FaceImg from '../../img/team/faces/pepe-face.jpg';
 
 class Team extends React.Component {
     constructor(){
         super()
         this.state = {
-            img: require('../../img/team/tools/example-tools.jpg'),
-            imgTwo: require('../../img/team/tools/example-tools.jpg')
+            namesOne: ['example', 'alejandro'],
+            namesTwo: ['linda', 'david'],
+            example: require('../../img/team/tools/example-tools.jpg'),
         }
     }
 
     mouseEnter = (e) => {
-        const target = e.target.name.split(' ')
+        const name = e.target.name
         this.setState({
             ...this.state,
-            [target[1]]: require(`../../img/team/faces/${target[0]}-face.jpg`)
+            [name]: require(`../../img/team/faces/${name}-face.jpg`)
         })
     }
 
     mouseLeave = (e) => {
-        const target = e.target.name.split(' ')
+        const name = e.target.name
         this.setState({
             ...this.state,
-            [target[1]]: require(`../../img/team/tools/${target[0]}-tools.jpg`)
+            [name]: require(`../../img/team/tools/${name}-tools.jpg`)
+        })
+    }
+
+    setOne = () => {
+        return this.state.namesOne.map(name => {
+            return(
+                <div className='set'>
+                    <img 
+                        name={`${name}`}
+                        className='tool-img'
+                        onMouseEnter={(e) => this.mouseEnter(e)} 
+                        onMouseLeave={(e) => this.mouseLeave(e)} 
+                        src={this.state[name]} 
+                    />
+                    <ul>
+                        <li>
+                            <strong>{name}</strong>
+                        </li>
+                        <li>
+                            pizza
+                        </li>
+                        <li>
+                            polyphia
+                        </li>
+                        <li>
+                            bouldering
+                        </li>
+                        <li>
+                            the strokes
+                        </li>
+                        <li>
+                            yosi horikawa
+                        </li>
+                    </ul>
+                </div>
+            )
+        })
+    }
+
+    setTwo = () => {
+        return this.state.namesTwo.map(name => {
+            return(
+                <div className='set'>
+                    <img 
+                        name={`${name}`}
+                        className='tool-img'
+                        onMouseEnter={(e) => this.mouseEnter(e)} 
+                        onMouseLeave={(e) => this.mouseLeave(e)} 
+                        src={this.state[name]} 
+                    />
+                    <ul>
+                        <li>
+                            <strong>{name}</strong>
+                        </li>
+                        <li>
+                            pizza
+                        </li>
+                        <li>
+                            polyphia
+                        </li>
+                        <li>
+                            bouldering
+                        </li>
+                        <li>
+                            the strokes
+                        </li>
+                        <li>
+                            yosi horikawa
+                        </li>
+                    </ul>
+                </div>
+            )
         })
     }
 
@@ -38,216 +109,10 @@ class Team extends React.Component {
                 </div>
                 <div className='columns'>
                     <div className='columns__one'>
-                        <div className='set'>
-                            <img 
-                                name='example img'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.img} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example img'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.img} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example img'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.img} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example img'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.img} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
+                        {this.setOne()}
                     </div>
                     <div className='columns__two'>
-                        <div className='set'>
-                            <img 
-                                name='example imgTwo'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.imgTwo} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example imgTwo'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.imgTwo} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example imgTwo'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.imgTwo} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='set'>
-                            <img 
-                                name='example imgTwo'
-                                className='tool-img'
-                                onMouseEnter={(e) => this.mouseEnter(e)} 
-                                onMouseLeave={(e) => this.mouseLeave(e)} 
-                                src={this.state.imgTwo} 
-                            />
-                            <ul>
-                                <li>
-                                    pizza
-                                </li>
-                                <li>
-                                    polyphia
-                                </li>
-                                <li>
-                                    bouldering
-                                </li>
-                                <li>
-                                    the strokes
-                                </li>
-                                <li>
-                                    yosi horikawa
-                                </li>
-                            </ul>
-                        </div>
+                        {this.setTwo()}
                     </div>
                 </div>
             </section>
