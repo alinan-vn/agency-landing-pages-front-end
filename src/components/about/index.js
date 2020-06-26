@@ -6,6 +6,7 @@ class About extends React.Component {
     render() {
         return (
             <main className="about">
+                <div className="bg-img"></div> 
                 <div className="about__title">
                     <h2>About Us</h2>
                 </div>
