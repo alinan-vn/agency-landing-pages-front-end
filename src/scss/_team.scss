@@ -1,5 +1,4 @@
 .team {
-
     &__bg-img {
         height: 80vh;
         width: 100%;
@@ -47,8 +46,6 @@
     grid-gap: 4rem;
     padding-top: 3rem;
     padding-bottom: 10rem;
-    // align-items: center;
-    // justify-items: center;
 
     &__one {
         grid-area: column1;
@@ -71,7 +68,7 @@
 }
 
 .tool-img {
-    height: 50vh;
+    height: 30vh;
     width: 100%;
     border-radius: 25px;
 }
