@@ -1,66 +1,64 @@
 .about {
     
-    height: 90vh;
-    width: 100%;
-    background: 
-        linear-gradient(
-            to right,
-            rgba($primary-color, 0.6),
-            rgba($primary-color, 0.4)
-        ),
-        url($about-bg) center;
-    background-size: cover;
-    background-attachment: scroll;
-    // fixed --> keeps the background image fixed in one position while the rest of the rest of the page scrolls
-    // scroll --> the background image moves with the scroll
-    // local --> ?? seems to behave like scroll
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    &__title {
+        font-size: 2.6rem;
+        width: 65vw;
+        color: $fourth-color;
+        padding-bottom: 1rem;
+    }
+
+    &__paraLeft {
+        font-size: 1.3rem;
+        margin: 20px;
+        // margin-bottom: 30vh;
+        width: 60vw;
+        color: $fourth-color;
+        text-align: left;
+    }
+
+    &__paraRight {
+        font-size: 1.3rem;
+        margin: 20px;
+        // margin-bottom: 30vh;
+        width: 60vw;
+        color: $fourth-color;
+        text-align: right;
+    }
+
+    & .bg-img{height: 100vh;
+        width: 100%;
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.4), 
+                rgba($secondary-color, 0.8)
+            ),
+            url($about-bg) center;
+        background-size: cover;
+        // background-attachment: fixed;
+        // fixed --> keeps the background image fixed in one position while the rest of the rest of the page scrolls
+        // scroll --> the background image moves with the scroll
+        // local --> ?? seems to behave like scroll
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        // position: relative; --> the Navbar disappears with position relative
+        // text-align: center;
+    }
+
 }
+
+
+
+
+
+
     
-.trans-box {
-    padding: 10% 35%;
-    border-radius: 10px;
-    background-color: white;
-    background: rgba(0,0,100,0.2);
-    position: relative;
-    top: -100px
-}
 
-.trans-box h2 {
-    font-size: 48px;
-    white-space: nowrap;
-}
 
-.content-left {
-    margin: 10vh;
-    padding: 10vh ;
-    text-align: left;
 
-    h3 {
-        font-size: 35px;
-    }
-    
-    p {
-        font-size: 20px;
-    }
-}
-
-.content-right {
-    margin: 10px;
-    padding: 10px 180px ;
-    text-align: right;
-
-    h3 {
-        font-size: 35px;
-    }
-    
-    p {
-        font-size: 20px;
-    }
-}
 
 
 

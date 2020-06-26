@@ -6,12 +6,13 @@ class About extends React.Component {
     render() {
         return (
             <main className="about">
-                <div className="trans-box">
+                <div className="bg-img"></div> 
+                <div className="about__title">
                     <h2>About Us</h2>
                 </div>
 
-                <div className="content-left">
-                    <h3 >Our Philosophy</h3>
+                <div className="about__paraLeft">
+                    <h2 >Our Philosophy</h2>
 
                     <p>
                         Do dolor eiusmod adipisicing ad ullamco sint eu proident. Est  duis sunt anim et. Ea dolore nulla aliqua proident tempor. Nostrud aliquip consectetur et officia eu dolor ipsum pariatur aute esse.
@@ -26,16 +27,25 @@ class About extends React.Component {
                     </p>
                 </div>
 
-                <div className="content-right">
-                    <h3 >Our Team</h3>
+                
+
+                <div className="about__paraRight">
+                    <h2 >Our Team</h2>
                     <p>Nisi quis amet Lorem aliqua magna aute voluptate esse nostrud.</p>
 
                     <p>Ea irure elit occaecat et consectetur minim magna esse dolor occaecat. Mollit nostrud qui consequat labore exercitation consectetur deserunt est eiusmod consequat reprehenderit laborum deserunt. Lorem commodo commodo non cillum anim nisi culpa cillum qui incididunt nulla deserunt fugiat do.</p>
 
-                    {/* <p>
+                    <p>
                         We are a team of many backgrounds who collaborate with each other through the whole process of your product.
-                    </p> */}
+                    </p>
                 </div>
+
+                <div className="about__paraLeft">
+                    <h2 className="about__title">Title Three Test</h2>
+
+                    <p>Dolore elit officia reprehenderit occaecat ipsum reprehenderit est quis consectetur amet do et. Sunt et qui consectetur reprehenderit sint occaecat id sunt consectetur officia eu. Pariatur ex quis reprehenderit incididunt elit voluptate id cillum incididunt. Lorem ipsum ut fugiat eiusmod nostrud ullamco. Adipisicing amet qui cillum laborum. Ipsum deserunt labore adipisicing officia consectetur commodo commodo aute.</p>
+                </div>
+
             </main>
         )
     }
