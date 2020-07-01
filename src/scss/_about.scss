@@ -1,56 +1,74 @@
 .about {
-    
-
-    &__title {
-        font-size: 2.6rem;
-        width: 65vw;
-        color: $fourth-color;
-        padding-bottom: 1rem;
-    }
-
-    &__paraLeft {
-        font-size: 1.3rem;
-        margin: 20px;
-        // margin-bottom: 30vh;
-        width: 60vw;
-        color: $fourth-color;
-        text-align: left;
-    }
-
-    &__paraRight {
-        font-size: 1.3rem;
-        margin: 20px;
-        // margin-bottom: 30vh;
-        width: 60vw;
-        color: $fourth-color;
-        text-align: right;
-    }
-
-    & .bg-img{height: 100vh;
+    & .bg-img{
+        height: 30vh;
         width: 100%;
         background: 
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.4), 
-                rgba($secondary-color, 0.8)
+                rgba($secondary-color, 0.7)
             ),
             url($about-bg) center;
         background-size: cover;
-        // background-attachment: fixed;
-        // fixed --> keeps the background image fixed in one position while the rest of the rest of the page scrolls
-        // scroll --> the background image moves with the scroll
-        // local --> ?? seems to behave like scroll
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        // position: relative; --> the Navbar disappears with position relative
-        // text-align: center;
     }
 
+    &__display {
+        display: grid;
+        grid-template: 'column1 column2';
+        grid-gap: 2rem;
+
+        & .one {
+            grid-area: column1;
+            font-size: 1.3rem;
+            margin-left: 2rem;
+            width: 40vw;
+            color: $fourth-color;
+
+            & .img {
+                width: 40vw;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+        & .two {
+            grid-area: column2;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            width: 40vw;
+            color: $fourth-color;
+
+            & .img {
+                margin-top: 2rem;
+                width: 40vw;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+        
+    }
+
+    &__title {
+        font-size: 2.6rem;
+        text-align: center;
+        width: 65vw;
+        color: $fourth-color;
+        padding-bottom: 1rem;
+    }
 }
 
+.nav-about {
+    color: $third-color;
 
+    &:hover {
+        color: $fourth-color;
+        cursor: pointer;
+    }
+}
 
 
 
