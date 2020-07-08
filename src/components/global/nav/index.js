@@ -15,7 +15,7 @@ export default class Nav extends Component {
         if (path[1] === ''){
             this.setState({
                 ...this.state,
-                navClass: 'nav-base'
+                navClass: 'nav-landing'
             })
         } else {
             path = 'nav-' + path[1]

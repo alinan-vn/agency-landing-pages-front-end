@@ -6,8 +6,11 @@ class Landing extends React.Component {
         return(
             <main>
                 <section className='landing'>
-                    <h1 className='landing__text'>At City of Wind Design we spcecialize in UX Design and software development for Startups</h1>
-                    <p className='landing__para'>~~ Full 'Agency X' website coming soon!</p>
+                    <div className='landing__bg-img'>
+                        {/* <h1 className='landing__text'>Helping you achieve to get to where you need to go</h1> */}
+                    </div>
+
+                    <h1 className='landing__text'>Helping you achieve to get to where you need to go</h1>
                 </section>
             </main>
         )

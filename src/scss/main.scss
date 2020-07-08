@@ -12,7 +12,8 @@ body {
     // background-color: $primary-color;
     background: linear-gradient(
         to right,
-        $primary-color, $secondary-color
+        rgba($primary-color, 1), 
+        rgba($secondary-color, 1)
     );
 }
 
